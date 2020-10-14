@@ -24,6 +24,10 @@ public class MyApp
             while((c = fis.read()) != -1){
                 fos.write((byte)c);
             }
+            
+            //System.out.println("입력 파일 : " + inputFile.getPath() + "(파일크기 = " + inputFile.length() + ")");
+            //System.out.println("출력 파일 : " + outputFile.getPath() + "(파일크기 = " + outputFile.length() + ")");
+            
             fis.close();
             fos.close();
         }
